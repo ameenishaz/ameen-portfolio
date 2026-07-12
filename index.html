@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ameen Ambalakuth — UI/UX Designer & Web Developer | Portfolio</title>
-<meta name="description" content="Ameen Ambalakuth — Computer Engineering diploma holder, UI/UX & Web Development intern, and aviation-management student based in Jeddah, Saudi Arabia." />
+<meta name="description" content="Ameen Ambalakuth — Computer Engineering diploma holder, UI/UX & Web Development intern, and aviation-management student based in Jeddah & Riyadh, Saudi Arabia." />
 <meta name="author" content="Ameen Ambalakuth" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://ameen-ambalakuth-portfolio.netlify.app/" />
@@ -12,7 +12,7 @@
 <!-- Open Graph / social + search cards -->
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Ameen Ambalakuth — UI/UX Designer & Web Developer" />
-<meta property="og:description" content="Portfolio of Ameen Ambalakuth — UI/UX & Web Development, IT Support, and IATA Airport Management. Based in Jeddah, Saudi Arabia." />
+<meta property="og:description" content="Portfolio of Ameen Ambalakuth — UI/UX & Web Development, IT Support, and IATA Airport Management. Based in Jeddah & Riyadh, Saudi Arabia." />
 <meta property="og:url" content="https://ameen-ambalakuth-portfolio.netlify.app/" />
 <meta property="og:image" content="https://ameen-ambalakuth-portfolio.netlify.app/img/img01.jpeg" />
 <meta property="og:site_name" content="Ameen Ambalakuth" />
@@ -20,7 +20,7 @@
 <meta property="profile:last_name" content="Ambalakuth" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Ameen Ambalakuth — UI/UX Designer & Web Developer" />
-<meta name="twitter:description" content="Portfolio of Ameen Ambalakuth — UI/UX & Web Development, IT Support, Jeddah, Saudi Arabia." />
+<meta name="twitter:description" content="Portfolio of Ameen Ambalakuth — UI/UX & Web Development, IT Support, Jeddah & Riyadh, Saudi Arabia." />
 <meta name="twitter:image" content="https://ameen-ambalakuth-portfolio.netlify.app/img/img01.jpeg" />
 
 <!-- Structured data: this is what Google reads to identify you as a person -->
@@ -210,6 +210,22 @@
   .cert .n{font-weight:600;font-size:.96rem}
   .cert .by{color:var(--muted);font-size:.84rem;margin-top:2px}
 
+  /* cv card */
+  .cv-card{border:1px solid var(--line);border-radius:20px;padding:40px;
+    background:linear-gradient(135deg,rgba(255,255,255,.01),rgba(255,255,255,.03));
+    backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;gap:30px;position:relative;overflow:hidden}
+  .cv-card::before{content:"";position:absolute;top:-50%;right:-20%;width:300px;height:300px;
+    background:radial-gradient(circle,rgba(255,255,255,.05),transparent 70%);filter:blur(20px);pointer-events:none}
+  .cv-card .cv-content{max-width:65%}
+  .cv-card h2{font-size:1.8rem;margin-top:8px}
+  .cv-card .lead{font-size:.95rem;margin-top:8px;color:var(--muted);max-width:100%}
+  .cv-action{flex-shrink:0}
+
+  @media(max-width:768px){
+    .cv-card{flex-direction:column;text-align:center;padding:30px 24px}
+    .cv-card .cv-content{max-width:100%}
+  }
+
   /* contact */
   .contact-card{border:1px solid var(--line-strong);border-radius:22px;padding:52px;text-align:center;position:relative;overflow:hidden;
     background:linear-gradient(160deg,#131317,#0b0b0e)}
@@ -286,6 +302,7 @@
       <a href="#experience">experience</a>
       <a href="#education">education</a>
       <a href="#skills">skills</a>
+      <a href="#cv">cv</a>
       <a href="#contact">contact</a>
     </div>
     <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
@@ -294,7 +311,7 @@
 
 <header id="top">
   <div class="wrap">
-    <span class="term"><span class="g"></span> Available for opportunities &middot; Jeddah, KSA</span>
+    <span class="term"><span class="g"></span> Available for opportunities &middot; Jeddah &amp; Riyadh, KSA</span>
     <div class="hero">
       <div class="reveal in">
         <h1>Ameen Ambalakuth
@@ -336,7 +353,7 @@
         <p>I work at the intersection of <strong>design, technology, and people</strong> — from crafting wireframes in Figma to troubleshooting systems and supporting users. I'm a strong team player who loves learning, solving problems, and contributing wherever I can add value.</p>
       </div>
       <div class="facts reveal">
-        <div class="fact"><div class="k">location</div><div class="v">Jeddah, Saudi Arabia</div></div>
+        <div class="fact"><div class="k">location</div><div class="v">Jeddah &amp; Riyadh, Saudi Arabia</div></div>
         <div class="fact"><div class="k">focus</div><div class="v">UI/UX &middot; Web &middot; IT Support</div></div>
         <div class="fact"><div class="k">languages</div><div class="v">English &middot; Malayalam &middot; Arabic</div></div>
         <div class="fact"><div class="k">status</div><div class="v">Open to work &amp; internships</div></div>
@@ -369,7 +386,7 @@
         <div class="t-card">
           <div class="t-when">2023 &mdash; 2024</div>
           <div class="t-title">Intern &middot; Web Development, UI/UX Design &amp; Technical Support</div>
-          <div class="t-org">Softroniics IT Company</div>
+          <div class="t-org">Softroniics</div>
           <ul>
             <li>Designed wireframes, mockups, and user-friendly web/mobile interface layouts in <strong>Figma</strong>, supported by Figma's built-in AI tools.</li>
             <li>Reported and tracked website bugs using <strong>Jira</strong> to support testing and issue resolution.</li>
@@ -461,10 +478,28 @@
       <div class="certs">
         <div class="cert"><span class="ic">[01]</span><div><div class="n">Data Analysis with Python</div><div class="by">IBM Developer Skills Network</div></div></div>
         <div class="cert"><span class="ic">[02]</span><div><div class="n">Agile Project Management</div><div class="by">HP Foundation</div></div></div>
-        <div class="cert"><span class="ic">[03]</span><div><div class="n">UI/UX Design Internship</div><div class="by">Softroniics IT Company</div></div></div>
-        <div class="cert"><span class="ic">[04]</span><div><div class="n">Web Development Internship</div><div class="by">Softroniics IT Company</div></div></div>
+        <div class="cert"><span class="ic">[03]</span><div><div class="n">UI/UX Design Internship</div><div class="by">Softroniics</div></div></div>
+        <div class="cert"><span class="ic">[04]</span><div><div class="n">Web Development Internship</div><div class="by">Softroniics</div></div></div>
         <div class="cert"><span class="ic">[05]</span><div><div class="n">Social Media Marketing</div><div class="by">HP Foundation</div></div></div>
         <div class="cert"><span class="ic">[06]</span><div><div class="n">Soft Skills &amp; Personality Development</div><div class="by">NSDC</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cv">
+  <div class="wrap">
+    <div class="cv-card reveal">
+      <div class="cv-content">
+        <span class="eyebrow">resumé</span>
+        <h2>Curriculum Vitae</h2>
+        <p class="lead">Download my detailed CV to view my full qualifications, academic achievements, and technical background.</p>
+      </div>
+      <div class="cv-action">
+        <a class="btn primary" href="cv.html" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          View / Print CV
+        </a>
       </div>
     </div>
   </div>
@@ -489,7 +524,7 @@
 
 <footer>
   <div class="wrap">
-    &lt;/&gt; built by Ameen Ambalakuth &middot; Jeddah, KSA &middot; <a href="mailto:ameen626266@gmail.com">ameen626266@gmail.com</a>
+    &lt;/&gt; built by Ameen Ambalakuth &middot; Jeddah &amp; Riyadh, KSA &middot; <a href="mailto:ameen626266@gmail.com">ameen626266@gmail.com</a>
   </div>
 </footer>
 

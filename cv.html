@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ameen Ambalakuth — Curriculum Vitae</title>
+<meta name="description" content="Curriculum Vitae of Ameen Ambalakuth — UI/UX Designer & Web Developer based in Jeddah & Riyadh, Saudi Arabia." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --primary: #0a0a0c;
+    --secondary: #5a5a63;
+    --line: #e2e2e7;
+    --bg: #ffffff;
+    --text: #1d1d1f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    background: #f4f4f6;
+    color: var(--text);
+    line-height: 1.55;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .actions {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: inherit;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: #ffffff;
+    border: 1px solid var(--primary);
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--secondary);
+    border: 1px solid var(--line);
+  }
+  .btn-secondary:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  .cv-page {
+    background: var(--bg);
+    width: 100%;
+    max-width: 800px;
+    padding: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    position: relative;
+  }
+  
+  .cv-header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 15px;
+    margin-bottom: 12px;
+  }
+  .header-info h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+  .header-info p {
+    font-size: 0.95rem;
+    color: var(--secondary);
+  }
+  .header-info a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    transition: 0.2s;
+  }
+  .header-info a:hover {
+    color: var(--secondary);
+    border-bottom-color: var(--primary);
+  }
+
+  /* Section Title */
+  .section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 3px;
+  }
+
+  /* Typography */
+  p, li {
+    font-size: 0.9rem;
+    color: #333338;
+    margin-bottom: 6px;
+  }
+  ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  li {
+    margin-bottom: 3px;
+  }
+  
+  /* Experience & Education */
+  .entry {
+    margin-bottom: 14px;
+  }
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+  .entry-title {
+    color: var(--primary);
+  }
+  .entry-date {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+  .entry-org {
+    font-style: italic;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+
+  /* Two Column Lists */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+
+  /* Print Media Query */
+  @media print {
+    body {
+      background: none;
+      padding: 0;
+      color: #000;
+    }
+    .actions {
+      display: none;
+    }
+    .cv-page {
+      box-shadow: none;
+      padding: 0;
+      max-width: 100%;
+      border-radius: 0;
+    }
+    .section-title {
+      margin-top: 18px;
+      margin-bottom: 6px;
+    }
+    p, li {
+      font-size: 0.82rem;
+    }
+  }
+
+  /* Responsive screen */
+  @media (max-width: 600px) {
+    body {
+      padding: 20px 10px;
+    }
+    .cv-page {
+      padding: 24px;
+    }
+    .cv-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+    .entry-header {
+      flex-direction: column;
+      gap: 2px;
+    }
+    .grid-2 {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="actions">
+  <a class="btn btn-secondary" href="index.html">&larr; Back to Portfolio</a>
+  <button class="btn btn-primary" onclick="window.print()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Print / Save as PDF
+  </button>
+</div>
+
+<div class="cv-page">
+  <div class="cv-header">
+    <div class="header-info">
+      <h1>Ameen Ambalakuth</h1>
+      <p>Jeddah, Saudi Arabia &middot; <a href="tel:+966532787718">+966 532787718</a> &middot; <a href="mailto:ameen626266@gmail.com">ameen626266@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/ameen-a-" target="_blank" rel="noopener">linkedin.com/in/ameen-a-</a></p>
+    </div>
+  </div>
+
+  <div class="section-title">Professional Summary</div>
+  <p>Motivated and adaptable fresher with a Diploma in Computer Engineering and currently pursuing a BA in English, along with a Diploma in Airport Management (IATA). Completed internships in UI/UX Design and Web Development. Possess knowledge in IT Support, customer service, airport operations, technical support, and computer applications. Skilled in teamwork and problem solving. Eager to contribute to a reputable organization while learning and growing professionally.</p>
+
+  <div class="section-title">Professional Experience</div>
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">Office Assistant</span>
+      <span class="entry-date">2026 &mdash; Present</span>
+    </div>
+    <div class="entry-org">Jawar Al Ihsan Holding Co.</div>
+    <ul>
+      <li>Managed daily office operations, including document filing, data entry, and maintaining accurate records.</li>
+      <li>Assisted with preparing reports, handling correspondence, and organizing office documents and files.</li>
+      <li>Coordinated meetings, scheduled appointments, and provided administrative support to management and staff.</li>
+      <li>Handled phone calls, emails, and visitor inquiries professionally while ensuring effective communication across departments.</li>
+      <li>Maintained office supplies and supported basic computer-based tasks using <strong>Microsoft Office</strong> (Word, Excel, and Outlook), ensuring smooth day-to-day office administration.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">Intern - Web Development, UI/UX Design &amp; Technical Support</span>
+      <span class="entry-date">2023 &mdash; 24</span>
+    </div>
+    <div class="entry-org">Softroniics</div>
+    <ul>
+      <li>Designed wireframes, mockups, and user-friendly web/mobile interface layouts using Figma, supported by Figma's built-in AI tools.</li>
+      <li>Reported and tracked website bugs using Jira to support testing and issue resolution.</li>
+      <li>Worked with basic SQL concepts and programming assistance using AI tools like Claude for understanding code logic and debugging support.</li>
+      <li>Collaborated with developers and team members on project requirements and design consistency.</li>
+      <li>Worked effectively in a team environment while managing assigned tasks and deadlines.</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Education</div>
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">Diploma in Computer Engineering</span>
+      <span class="entry-date">2022 &mdash; 2025</span>
+    </div>
+    <div class="entry-org">State Board of Technical Education, Kerala, India</div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">Diploma in IATA Airport Management</span>
+      <span class="entry-date">2025 &mdash; 2026</span>
+    </div>
+    <div class="entry-org">Vision School of Aviation, Perinthalmanna, India</div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">Bachelor of Arts (BA) in English - Pursuing</span>
+      <span class="entry-date">2025</span>
+    </div>
+    <div class="entry-org">Manonmaniam Sundaranar University, Tamil Nadu, India</div>
+  </div>
+
+  <div class="section-title">Certifications</div>
+  <ul>
+    <li>Data Analysis with Python &mdash; IBM Developers Skills Network</li>
+    <li>Agile Project Management &mdash; HP Foundation</li>
+    <li>UI/UX Design Internship Certificate &mdash; Softroniics</li>
+    <li>Social Media Marketing &mdash; HP Foundation</li>
+    <li>Soft Skills &amp; Personality Development &mdash; National Skill Development Corporation (NSDC)</li>
+    <li>Web Development Internship Certificate &mdash; Softroniics</li>
+  </ul>
+
+  <div class="section-title">Technical and Soft Skills</div>
+  <div class="grid-2">
+    <ul>
+      <li>Operating system &amp; Networks</li>
+      <li>Troubleshooting and problem solving</li>
+      <li>Technical Support</li>
+      <li>Airport safety, security procedures</li>
+      <li>Software Installation &amp; System Setup</li>
+      <li>Windows OS (installation, configuration, troubleshooting)</li>
+    </ul>
+    <ul>
+      <li>Teamwork &amp; Collaboration</li>
+      <li>Time Management</li>
+      <li>Social media handling</li>
+      <li>Hardware setup, configuration, and basic maintenance</li>
+      <li>Team lead</li>
+      <li>Documentation</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Software and Tools</div>
+  <div class="grid-2">
+    <ul>
+      <li>MS Office</li>
+      <li>Jira</li>
+      <li>AnyDesk</li>
+      <li>Figma</li>
+    </ul>
+    <ul>
+      <li>Cisco Packet Tracer</li>
+      <li>Visual Studio Code</li>
+      <li>GitHub</li>
+      <li>Adobe Photoshop</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Languages</div>
+  <ul>
+    <li>English &mdash; Conversational (spoken and written) &middot; Malayalam &mdash; Native &middot; Arabic &mdash; Basic</li>
+  </ul>
+</div>
+
+</body>
+</html>
